@@ -6,7 +6,7 @@
   <link href="https://ch3n9w.github.io/atom.xml" rel="self"/>
   
   <link href="https://ch3n9w.github.io/"/>
-  <updated>2022-06-07T07:33:46.000Z</updated>
+  <updated>2022-12-12T06:07:02.791Z</updated>
   <id>https://ch3n9w.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>virtualbox中搭建kubernetes集群</title>
+    <link href="https://ch3n9w.github.io/2022/12/12/k8s-setup/"/>
+    <id>https://ch3n9w.github.io/2022/12/12/k8s-setup/</id>
+    <published>2022-12-12T04:17:49.000Z</published>
+    <updated>2022-12-12T06:07:02.791Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;GFW&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;评价是GFW害人不浅&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="安全研究" scheme="https://ch3n9w.github.io/categories/%E5%AE%89%E5%85%A8%E7%A0%94%E7%A9%B6/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>fastjson漏洞学习</title>
@@ -351,23 +373,6 @@
     
     
     <category term="开发" scheme="https://ch3n9w.github.io/categories/%E5%BC%80%E5%8F%91/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>临行前夜--2019</title>
-    <link href="https://ch3n9w.github.io/2020/01/08/note-before-back/"/>
-    <id>https://ch3n9w.github.io/2020/01/08/note-before-back/</id>
-    <published>2020-01-07T21:29:24.000Z</published>
-    <updated>2021-10-16T06:17:28.207Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;昨晚约好的车今天早上竟然被司机一声不吭取消了, 真的无语……得亏睡得浅起床看了一眼.新约的车又要早早开往机场, 于是无奈起了个大早. 到达后又被通知延误, 也不知和离开时候的飞雪有无关系, 但不管怎样, 孤身顶着鹅毛行走路上, 这样离开倒还是别有风味, 于是也有了碎碎念的兴致.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="碎碎念" scheme="https://ch3n9w.github.io/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
     
   </entry>
