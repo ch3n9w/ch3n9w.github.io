@@ -59,7 +59,7 @@
     <link href="https://ch3n9w.github.io/2022/02/21/sec-fastjson/"/>
     <id>https://ch3n9w.github.io/2022/02/21/sec-fastjson/</id>
     <published>2022-02-21T06:06:27.000Z</published>
-    <updated>2022-06-07T07:33:46.000Z</updated>
+    <updated>2022-12-12T09:17:13.227Z</updated>
     
     
     <summary type="html">&lt;p&gt;fastjson漏洞的学习笔记&lt;/p&gt;</summary>
@@ -76,7 +76,7 @@
     <link href="https://ch3n9w.github.io/2022/02/09/gossip-2021-summery/"/>
     <id>https://ch3n9w.github.io/2022/02/09/gossip-2021-summery/</id>
     <published>2022-02-09T08:12:20.000Z</published>
-    <updated>2022-02-09T08:14:43.000Z</updated>
+    <updated>2022-12-12T09:17:26.192Z</updated>
     
     
     <summary type="html">&lt;p&gt;这是一篇拖延了很久的年度总结,在下决心写它的时候,我已经从过年开始无所事事地玩了十几天的游戏了,本来说好要在过年那天写的总结也一直到现在才开始动笔,着实是惭愧.&lt;/p&gt;</summary>
@@ -93,7 +93,7 @@
     <link href="https://ch3n9w.github.io/2022/01/27/sec-pwnable/"/>
     <id>https://ch3n9w.github.io/2022/01/27/sec-pwnable/</id>
     <published>2022-01-27T09:48:33.000Z</published>
-    <updated>2022-02-09T08:20:53.000Z</updated>
+    <updated>2022-12-12T09:16:09.076Z</updated>
     
     
     <summary type="html">&lt;p&gt;尝试学pwn,放弃学pwn&lt;/p&gt;</summary>
@@ -110,7 +110,7 @@
     <link href="https://ch3n9w.github.io/2022/01/22/sec-shiro-attack/"/>
     <id>https://ch3n9w.github.io/2022/01/22/sec-shiro-attack/</id>
     <published>2022-01-22T02:52:46.000Z</published>
-    <updated>2022-05-31T03:36:10.000Z</updated>
+    <updated>2022-12-12T09:16:03.053Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -129,7 +129,7 @@
     <link href="https://ch3n9w.github.io/2022/01/14/sec-phpggc-thinkphp/"/>
     <id>https://ch3n9w.github.io/2022/01/14/sec-phpggc-thinkphp/</id>
     <published>2022-01-14T14:19:13.000Z</published>
-    <updated>2022-01-20T07:53:08.000Z</updated>
+    <updated>2022-12-12T09:16:20.108Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -148,7 +148,7 @@
     <link href="https://ch3n9w.github.io/2021/12/11/sec-log4j2-jndi/"/>
     <id>https://ch3n9w.github.io/2021/12/11/sec-log4j2-jndi/</id>
     <published>2021-12-11T06:56:51.000Z</published>
-    <updated>2021-12-11T08:52:48.000Z</updated>
+    <updated>2022-12-12T09:16:32.046Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -167,7 +167,7 @@
     <link href="https://ch3n9w.github.io/2021/12/02/tech-SwayTrouble/"/>
     <id>https://ch3n9w.github.io/2021/12/02/tech-SwayTrouble/</id>
     <published>2021-12-02T06:24:23.000Z</published>
-    <updated>2022-12-12T06:51:20.472Z</updated>
+    <updated>2022-12-12T09:14:28.589Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/SwayTrouble/image-20211202211403307.png&quot; alt=&quot;image-20211202211403307&quot;&gt;&lt;/p&gt;</summary>
@@ -184,7 +184,7 @@
     <link href="https://ch3n9w.github.io/2021/11/19/gossip-Cyberpunk/"/>
     <id>https://ch3n9w.github.io/2021/11/19/gossip-Cyberpunk/</id>
     <published>2021-11-19T03:18:11.000Z</published>
-    <updated>2022-12-12T06:50:47.836Z</updated>
+    <updated>2022-12-12T09:17:21.436Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/Cyberpunk/image-20211119151417648.png&quot; alt=&quot;image-20211119151417648&quot;&gt;&lt;/p&gt;</summary>
@@ -201,7 +201,7 @@
     <link href="https://ch3n9w.github.io/2021/11/13/sec-GhostCat/"/>
     <id>https://ch3n9w.github.io/2021/11/13/sec-GhostCat/</id>
     <published>2021-11-13T05:14:29.000Z</published>
-    <updated>2022-05-22T04:15:22.000Z</updated>
+    <updated>2022-12-12T09:17:09.348Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -220,7 +220,7 @@
     <link href="https://ch3n9w.github.io/2021/10/22/tech-wayland-mode/"/>
     <id>https://ch3n9w.github.io/2021/10/22/tech-wayland-mode/</id>
     <published>2021-10-22T09:04:51.000Z</published>
-    <updated>2022-12-12T06:51:17.383Z</updated>
+    <updated>2022-12-12T09:14:26.308Z</updated>
     
     
     <summary type="html">&lt;p&gt;记录切换到wayland时候的必要操作和个人体验&lt;/p&gt;
@@ -238,7 +238,7 @@
     <link href="https://ch3n9w.github.io/2021/10/15/sec-jdbc-unserialize/"/>
     <id>https://ch3n9w.github.io/2021/10/15/sec-jdbc-unserialize/</id>
     <published>2021-10-15T13:46:28.000Z</published>
-    <updated>2021-10-16T06:15:40.000Z</updated>
+    <updated>2022-12-12T09:16:50.350Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -257,7 +257,7 @@
     <link href="https://ch3n9w.github.io/2020/10/01/tech-IDEA-Start-Servlet/"/>
     <id>https://ch3n9w.github.io/2020/10/01/tech-IDEA-Start-Servlet/</id>
     <published>2020-10-01T14:10:28.000Z</published>
-    <updated>2022-12-12T06:51:26.838Z</updated>
+    <updated>2022-12-12T09:14:33.160Z</updated>
     
     
     <summary type="html">&lt;p&gt;采用的是版本较新的idea2020.2, 使用的操作系统为&lt;code&gt;MANJARO LINUX&lt;/code&gt;, 其中的过程挺迷迷糊糊的就水一篇来记录一下. &lt;/p&gt;</summary>
@@ -274,7 +274,7 @@
     <link href="https://ch3n9w.github.io/2020/08/29/ctf-GACTF2020/"/>
     <id>https://ch3n9w.github.io/2020/08/29/ctf-GACTF2020/</id>
     <published>2020-08-29T07:49:36.000Z</published>
-    <updated>2021-11-14T06:12:49.000Z</updated>
+    <updated>2022-12-12T09:17:48.122Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;simpleflask&quot;&gt;&lt;a href=&quot;#simpleflask&quot; class=&quot;headerlink&quot; title=&quot;simpleflask&quot;&gt;&lt;/a&gt;simpleflask&lt;/h2&gt;&lt;p&gt;和以往的flask不一样的地方在于, 这里是经过更新后的flask, 计算pin码的方式已经和以前不一样了, 参考 &lt;a href=&quot;https://www.chainnews.com/articles/898433701852.htm&quot;&gt;https://www.chainnews.com/articles/898433701852.htm&lt;/a&gt;, 不过问题不大,就把machine-id拼接在docker那一串东西的前面就可以了, 需要注意的是每十分钟重启时候的机器mac地址是会变化的.&lt;/p&gt;</summary>
@@ -291,7 +291,7 @@
     <link href="https://ch3n9w.github.io/2020/08/27/ctf-qwb2020-web-1/"/>
     <id>https://ch3n9w.github.io/2020/08/27/ctf-qwb2020-web-1/</id>
     <published>2020-08-27T12:48:12.000Z</published>
-    <updated>2021-11-14T06:20:11.000Z</updated>
+    <updated>2022-12-12T09:17:38.092Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/qwb2020-web-1/image-20211114141959846.png&quot; alt=&quot;image-20211114141959846&quot;&gt;&lt;/p&gt;</summary>
@@ -308,7 +308,7 @@
     <link href="https://ch3n9w.github.io/2020/08/24/sec-http-smuggling/"/>
     <id>https://ch3n9w.github.io/2020/08/24/sec-http-smuggling/</id>
     <published>2020-08-24T14:22:46.000Z</published>
-    <updated>2021-11-14T06:15:02.000Z</updated>
+    <updated>2022-12-12T09:17:03.974Z</updated>
     
     
     <summary type="html">&lt;p&gt;正常的请求&lt;/p&gt;
@@ -326,7 +326,7 @@
     <link href="https://ch3n9w.github.io/2020/08/20/ctf-ciscn2020-online/"/>
     <id>https://ch3n9w.github.io/2020/08/20/ctf-ciscn2020-online/</id>
     <published>2020-08-20T05:16:50.000Z</published>
-    <updated>2021-11-14T06:12:05.000Z</updated>
+    <updated>2022-12-12T09:17:58.896Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -345,7 +345,7 @@
     <link href="https://ch3n9w.github.io/2020/05/11/ctf-%E7%BD%91%E9%BC%8E%E6%9D%AF2020/"/>
     <id>https://ch3n9w.github.io/2020/05/11/ctf-%E7%BD%91%E9%BC%8E%E6%9D%AF2020/</id>
     <published>2020-05-11T08:11:31.000Z</published>
-    <updated>2021-11-14T06:21:07.000Z</updated>
+    <updated>2022-12-12T09:17:31.238Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/%E7%BD%91%E9%BC%8E%E6%9D%AF2020/image-20211114142107501.png&quot; alt=&quot;image-20211114142107501&quot;&gt;&lt;/p&gt;</summary>
@@ -362,7 +362,7 @@
     <link href="https://ch3n9w.github.io/2020/02/03/sec-padding-oracle-and-cbc-attack/"/>
     <id>https://ch3n9w.github.io/2020/02/03/sec-padding-oracle-and-cbc-attack/</id>
     <published>2020-02-03T08:42:20.000Z</published>
-    <updated>2021-11-14T06:18:45.000Z</updated>
+    <updated>2022-12-12T09:16:25.781Z</updated>
     
     
     <summary type="html">&lt;p&gt;padding oracle 原理: &lt;a href=&quot;https://www.freebuf.com/articles/database/150606.html&quot;&gt;https://www.freebuf.com/articles/database/150606.html&lt;/a&gt;&lt;/p&gt;</summary>
