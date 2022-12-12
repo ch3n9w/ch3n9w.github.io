@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 5.4.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/flash.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/flash.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"ch3n9w.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.14.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="采用的是版本较新的idea2020.2, 使用的操作系统为MANJARO LINUX, 其中的过程挺迷迷糊糊的就水一篇来记录一下.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用idea开启Servlet">
+<meta property="og:url" content="https://ch3n9w.github.io/2020/10/01/IDEA-Start-Servlet/index.html">
+<meta property="og:site_name" content="ch3n9w||超元域">
+<meta property="og:description" content="采用的是版本较新的idea2020.2, 使用的操作系统为MANJARO LINUX, 其中的过程挺迷迷糊糊的就水一篇来记录一下.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ch3n9w.github.io/images/IDEA-Start-Servlet/image-20211114141517710.png">
+<meta property="og:image" content="https://ch3n9w.github.io/images/IDEA-Start-Servlet/image-20211114141525898.png">
+<meta property="og:image" content="https://ch3n9w.github.io/images/IDEA-Start-Servlet/image-20211114141531496.png">
+<meta property="og:image" content="https://ch3n9w.github.io/images/IDEA-Start-Servlet/image-20211114141542947.png">
+<meta property="og:image" content="https://ch3n9w.github.io/images/IDEA-Start-Servlet/image-20211114141552533.png">
+<meta property="og:image" content="https://ch3n9w.github.io/images/IDEA-Start-Servlet/image-20211114141601679.png">
+<meta property="og:image" content="https://ch3n9w.github.io/images/IDEA-Start-Servlet/image-20211114141610853.png">
+<meta property="article:published_time" content="2020-10-01T14:10:28.000Z">
+<meta property="article:modified_time" content="2021-11-14T06:16:10.884Z">
+<meta property="article:author" content="ch3n9w">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ch3n9w.github.io/images/IDEA-Start-Servlet/image-20211114141517710.png">
+
+
+<link rel="canonical" href="https://ch3n9w.github.io/2020/10/01/IDEA-Start-Servlet/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://ch3n9w.github.io/2020/10/01/IDEA-Start-Servlet/","path":"2020/10/01/IDEA-Start-Servlet/","title":"使用idea开启Servlet"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>使用idea开启Servlet | ch3n9w||超元域</title>
+  
+
+
+
+
+
+
+  <script async defer data-website-id="" src=""></script>
+
+  <script defer data-domain="" src=""></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="ch3n9w||超元域" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">ch3n9w||超元域</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">(´・ω・｀)你瞅啥呢</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="ch3n9w"
+      src="/images/sabito.jpg">
+  <p class="site-author-name" itemprop="name">ch3n9w</p>
+  <div class="site-description" itemprop="description">向阳十八载，回首也无晴</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">35</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ch3n9w" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ch3n9w" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:ch3n9w@gmail.com" title="E-Mail → mailto:ch3n9w@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/ch3n9w" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;ch3n9w" rel="noopener" target="_blank"><i class="fab fa-telegram fa-fw"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://l0x1c.github.io/" title="https:&#x2F;&#x2F;l0x1c.github.io&#x2F;" rel="noopener" target="_blank">l0x1c</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://forever404.cn/" title="https:&#x2F;&#x2F;forever404.cn" rel="noopener" target="_blank">Forever</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://yml-sec.top/" title="https:&#x2F;&#x2F;yml-sec.top&#x2F;" rel="noopener" target="_blank">YeMoLi</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://althims.com/" title="https:&#x2F;&#x2F;althims.com" rel="noopener" target="_blank">Moyu</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="http://handsomedog.top/" title="http:&#x2F;&#x2F;handsomedog.top" rel="noopener" target="_blank">Handsomedog</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="http://fightingtree.github.io/" title="http:&#x2F;&#x2F;fightingtree.github.io" rel="noopener" target="_blank">FightingTree</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://sunian19.github.io/" title="https:&#x2F;&#x2F;sunian19.github.io&#x2F;" rel="noopener" target="_blank">SuNian</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://blog.cnxfs.com.cn/" title="https:&#x2F;&#x2F;blog.cnxfs.com.cn&#x2F;" rel="noopener" target="_blank">xiangfangsong</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://www.b3ale.cn/" title="https:&#x2F;&#x2F;www.b3ale.cn" rel="noopener" target="_blank">b3ale</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://ch3n9w.github.io/2020/10/01/IDEA-Start-Servlet/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/sabito.jpg">
+      <meta itemprop="name" content="ch3n9w">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ch3n9w||超元域">
+      <meta itemprop="description" content="向阳十八载，回首也无晴">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="使用idea开启Servlet | ch3n9w||超元域">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          使用idea开启Servlet
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-10-01 22:10:28" itemprop="dateCreated datePublished" datetime="2020-10-01T22:10:28+08:00">2020-10-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2021-11-14 14:16:10" itemprop="dateModified" datetime="2021-11-14T14:16:10+08:00">2021-11-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%BC%80%E5%8F%91/" itemprop="url" rel="index"><span itemprop="name">开发</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>采用的是版本较新的idea2020.2, 使用的操作系统为<code>MANJARO LINUX</code>, 其中的过程挺迷迷糊糊的就水一篇来记录一下. </p>
+<span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">File --&gt; New --&gt; Project --&gt; Java --&gt; Nextnext 新建一个项目</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">右键Project --&gt; open module setting --&gt; 点击+号 --&gt; 导入tomcat8的Servlet-api.jar </span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/IDEA-Start-Servlet/image-20211114141517710.png" alt="image-20211114141517710"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">右键项目 --&gt; Add Frameworks Support --&gt; 选中web application</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/IDEA-Start-Servlet/image-20211114141525898.png" alt="image-20211114141525898"></p>
+<p>选中后会多出来几个东西, 如下图, 多了<code>WEB-INF</code>目录和<code>index.jsp</code></p>
+<p><img src="/images/IDEA-Start-Servlet/image-20211114141531496.png" alt="image-20211114141531496"></p>
+<p><code>Web-INF</code>里面有只有一个<code>web.xml</code>, 什么是<code>WEB-INF</code>? 根据百度百科的介绍</p>
+<blockquote>
+<p>WEB-INF是Java的WEB应用的安全目录。所谓安全就是客户端无法访问，只有服务端可以访问的目录。如果想在页面中直接访问其中的文件，必须通过web.xml文件对要访问的文件进行相应映射才能访问。</p>
+<p>WEB-INF文件夹下除了web.xml外，还存一个classes文件夹，用以放置 *.class文件，这些 *.class文件是网站设计人员编写的类库，实现了jsp页面前台美工与后台服务的分离，使得网站的维护非常方便。web.xml文件为网站部署描述XML文件，对网站的部署非常重要。</p>
+<p>Web-Inf文件夹中除了有classes文件夹和一个web.xml文件外、还有lib文件夹（用于存放需要的jar包）（用于配置，比如说用来配置过滤器等。）</p>
+<p>/WEB-INF/src/<br>　　源码目录，按照包名结构放置各个java文件。</p>
+<p>/WEB-INF/database.properties<br>　　数据库配置文件</p>
+<p>/WEB-INF/tags/</p>
+<p>存放了自定义标签文件，该目录并不一定为 tags，可以根据自己的喜好和习惯为自己的标签文件库命名，当使用自定义的标签文件库名称时，在使用标签文件时就必须声明正确的标签文件库路径。例如：当自定义标签文件库名称为 simpleTags 时，在使用 simpleTags 目录下的标签文件时，就必须在 jsp 文件头声明为：&lt;%@ taglibprefix=”tags” tagdir=”/WEB-INF /simpleTags” % &gt;。</p>
+<p>/WEB-INF/jsp/</p>
+<p>jsp 1.2 以下版本的文件存放位置。改目录没有特定的声明，同样，可以根据自己的喜好与习惯来命名。此目录主要存放的是 jsp 1.2 以下版本的文件，为区分 jsp 2.0 文件，通常使用 jsp 命名，当然你也可以命名为 jspOldEdition 。</p>
+<p>/WEB-INF/jsp2/</p>
+<p>与 jsp 文件目录相比，该目录下主要存放 Jsp 2.0 以下版本的文件，当然，它也是可以任意命名的，同样为区别 Jsp 1.2以下版本的文件目录，通常才命名为 jsp2。</p>
+<p>META-INF</p>
+<p>相当于一个信息包，目录中的文件和目录获得Java 2平台的认可与解释，用来配置应用程序、扩展程序、类加载器和服务<br>　　manifest.mf文件，在用jar打包时自动生成。</p>
+</blockquote>
+<p>最重要的是<code>classes</code>文件夹和<code>lib</code>文件夹, 所以新建两个文件夹, 一个是<code>classes</code>,  另一个是<code>lib</code>, 配置项目结构让编译出来的class文件输出到<code>classes</code>中去</p>
+<p><img src="/images/IDEA-Start-Servlet/image-20211114141542947.png" alt="image-20211114141542947"></p>
+<p>然后在<code>src</code>目录下面编写<code>TestServlet.java</code>文件</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> javax.servlet.ServletException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.annotation.WebServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="meta">@WebServlet(&quot;/TestServlet&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestServelet</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> IOException, ServletException </span>&#123;</span><br><span class="line">        resp.getWriter().write(<span class="string">&quot;my first servlet&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>然后添加运行配置, 在<code>Manjaro linux</code>里面<code>tomcat</code>的目录是<code>/usr/share/tomcat8/</code>, ps: 为了不和<code>burpsuite</code>的默认端口冲突, 我将<code>tomcat</code>服务的默认端口设置在了8081.</p>
+<p><img src="/images/IDEA-Start-Servlet/image-20211114141552533.png" alt="image-20211114141552533"></p>
+<p>如果有提示错误的化就点击fix去修复, 然后在<code>Development</code>下面修改context, 这样就可以通过<code>http://localhost:8081/MyServlet</code>访问到服务了.</p>
+<p><img src="/images/IDEA-Start-Servlet/image-20211114141601679.png" alt="image-20211114141601679"></p>
+<p>点击运行就可以启动<code>Tomcat</code>服务器了.</p>
+<p><img src="/images/IDEA-Start-Servlet/image-20211114141610853.png" alt="image-20211114141610853"></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Written by:  </strong>ch4ser
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://ch3n9w.github.io/2020/10/01/IDEA-Start-Servlet/" title="使用idea开启Servlet">https://ch3n9w.github.io/2020/10/01/IDEA-Start-Servlet/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/08/29/GACTF2020/" rel="prev" title="GACTF2020">
+                  <i class="fa fa-chevron-left"></i> GACTF2020
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/10/15/jdbc-unserialize/" rel="next" title="mysql jdbc反序列化的不深入研究">
+                  mysql jdbc反序列化的不深入研究 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ch3n9w</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
