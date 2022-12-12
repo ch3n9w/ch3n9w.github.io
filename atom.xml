@@ -6,7 +6,7 @@
   <link href="https://ch3n9w.github.io/atom.xml" rel="self"/>
   
   <link href="https://ch3n9w.github.io/"/>
-  <updated>2022-12-12T08:31:11.347Z</updated>
+  <updated>2022-12-12T12:25:33.336Z</updated>
   <id>https://ch3n9w.github.io/</id>
   
   <author>
@@ -17,11 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>在红米ac2100路由器上开启clash</title>
+    <link href="https://ch3n9w.github.io/2022/12/12/tech-clash-ac2100/"/>
+    <id>https://ch3n9w.github.io/2022/12/12/tech-clash-ac2100/</id>
+    <published>2022-12-12T12:17:03.000Z</published>
+    <updated>2022-12-12T12:25:33.336Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;上网自由!&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://ch3n9w.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>服务器过期之后</title>
     <link href="https://ch3n9w.github.io/2022/12/12/gossip-boring-note-md/"/>
     <id>https://ch3n9w.github.io/2022/12/12/gossip-boring-note-md/</id>
     <published>2022-12-12T06:49:41.000Z</published>
-    <updated>2022-12-12T08:31:11.347Z</updated>
+    <updated>2022-12-12T09:17:22.763Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -40,7 +57,7 @@
     <link href="https://ch3n9w.github.io/2022/12/12/tech-k8s-setup/"/>
     <id>https://ch3n9w.github.io/2022/12/12/tech-k8s-setup/</id>
     <published>2022-12-12T04:17:49.000Z</published>
-    <updated>2022-12-12T06:51:12.479Z</updated>
+    <updated>2022-12-12T09:14:31.518Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -349,23 +366,6 @@
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/%E7%BD%91%E9%BC%8E%E6%9D%AF2020/image-20211114142107501.png&quot; alt=&quot;image-20211114142107501&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="做题" scheme="https://ch3n9w.github.io/categories/%E5%81%9A%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>padding_oracle 和 cbc字节反转</title>
-    <link href="https://ch3n9w.github.io/2020/02/03/sec-padding-oracle-and-cbc-attack/"/>
-    <id>https://ch3n9w.github.io/2020/02/03/sec-padding-oracle-and-cbc-attack/</id>
-    <published>2020-02-03T08:42:20.000Z</published>
-    <updated>2022-12-12T09:16:25.781Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;padding oracle 原理: &lt;a href=&quot;https://www.freebuf.com/articles/database/150606.html&quot;&gt;https://www.freebuf.com/articles/database/150606.html&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
