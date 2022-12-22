@@ -6,7 +6,7 @@
   <link href="https://ch3n9w.github.io/atom.xml" rel="self"/>
   
   <link href="https://ch3n9w.github.io/"/>
-  <updated>2022-12-12T13:44:40.742Z</updated>
+  <updated>2022-12-22T03:14:30.591Z</updated>
   <id>https://ch3n9w.github.io/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小阳人日记</title>
+    <link href="https://ch3n9w.github.io/2022/12/20/gossip-yang-diary-md/"/>
+    <id>https://ch3n9w.github.io/2022/12/20/gossip-yang-diary-md/</id>
+    <published>2022-12-20T14:45:44.000Z</published>
+    <updated>2022-12-22T03:14:30.591Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;生命本就如此脆弱&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="碎碎念" scheme="https://ch3n9w.github.io/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用Arch Linux + Sway一年后</title>
+    <link href="https://ch3n9w.github.io/2022/12/17/tech-Arch-Sway/"/>
+    <id>https://ch3n9w.github.io/2022/12/17/tech-Arch-Sway/</id>
+    <published>2022-12-17T06:24:23.000Z</published>
+    <updated>2022-12-22T03:13:24.638Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/tech-Arch-Sway/image-20221217132544646.png&quot; alt=&quot;image-20221217132544646&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://ch3n9w.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vim/neovim 的问题</title>
+    <link href="https://ch3n9w.github.io/2022/12/15/tech-thinking-about-vim/"/>
+    <id>https://ch3n9w.github.io/2022/12/15/tech-thinking-about-vim/</id>
+    <published>2022-12-15T04:04:12.000Z</published>
+    <updated>2022-12-22T04:10:39.631Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在消磨三年时光之后，我终于明白这个编辑器还远远称不上稳定，在道路的尽头之前，我能做的其实只有观望。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://ch3n9w.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>在红米ac2100路由器上开启clash</title>
@@ -180,23 +231,6 @@
   </entry>
   
   <entry>
-    <title>Arch Sway的日常</title>
-    <link href="https://ch3n9w.github.io/2021/12/02/tech-SwayTrouble/"/>
-    <id>https://ch3n9w.github.io/2021/12/02/tech-SwayTrouble/</id>
-    <published>2021-12-02T06:24:23.000Z</published>
-    <updated>2022-12-12T09:14:28.589Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/SwayTrouble/image-20211202211403307.png&quot; alt=&quot;image-20211202211403307&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://ch3n9w.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>论内卷化和Cyberpunk</title>
     <link href="https://ch3n9w.github.io/2021/11/19/gossip-Cyberpunk/"/>
     <id>https://ch3n9w.github.io/2021/11/19/gossip-Cyberpunk/</id>
@@ -228,24 +262,6 @@
     
     
     <category term="安全研究" scheme="https://ch3n9w.github.io/categories/%E5%AE%89%E5%85%A8%E7%A0%94%E7%A9%B6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>wayland_mode</title>
-    <link href="https://ch3n9w.github.io/2021/10/22/tech-wayland-mode/"/>
-    <id>https://ch3n9w.github.io/2021/10/22/tech-wayland-mode/</id>
-    <published>2021-10-22T09:04:51.000Z</published>
-    <updated>2022-12-12T09:14:26.308Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;记录切换到wayland时候的必要操作和个人体验&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/wayland-mode/image-20211022171916931.png&quot; alt=&quot;image-20211022171916931&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://ch3n9w.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
   </entry>
@@ -349,23 +365,6 @@
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;web越來越没有牌面了…国赛果然是pwn和misc的天下&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="做题" scheme="https://ch3n9w.github.io/categories/%E5%81%9A%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>网鼎杯2020 web</title>
-    <link href="https://ch3n9w.github.io/2020/05/11/ctf-%E7%BD%91%E9%BC%8E%E6%9D%AF2020/"/>
-    <id>https://ch3n9w.github.io/2020/05/11/ctf-%E7%BD%91%E9%BC%8E%E6%9D%AF2020/</id>
-    <published>2020-05-11T08:11:31.000Z</published>
-    <updated>2022-12-12T09:17:31.238Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/%E7%BD%91%E9%BC%8E%E6%9D%AF2020/image-20211114142107501.png&quot; alt=&quot;image-20211114142107501&quot;&gt;&lt;/p&gt;</summary>
     
     
     

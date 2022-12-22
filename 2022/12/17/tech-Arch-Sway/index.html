@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 5.4.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/flash.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/flash.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"ch3n9w.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.14.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta property="og:type" content="article">
+<meta property="og:title" content="使用Arch Linux + Sway一年后">
+<meta property="og:url" content="https://ch3n9w.github.io/2022/12/17/tech-Arch-Sway/index.html">
+<meta property="og:site_name" content="ch3n9w||超元域">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ch3n9w.github.io/images/tech-Arch-Sway/image-20221217132544646.png">
+<meta property="og:image" content="https://ch3n9w.github.io/images/tech-Arch-Sway/image-20221217104938577.png">
+<meta property="og:image" content="https://ch3n9w.github.io/images/tech-Arch-Sway/image-20221217115944914.png">
+<meta property="article:published_time" content="2022-12-17T06:24:23.000Z">
+<meta property="article:modified_time" content="2022-12-22T03:13:24.638Z">
+<meta property="article:author" content="ch3n9w">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ch3n9w.github.io/images/tech-Arch-Sway/image-20221217132544646.png">
+
+
+<link rel="canonical" href="https://ch3n9w.github.io/2022/12/17/tech-Arch-Sway/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://ch3n9w.github.io/2022/12/17/tech-Arch-Sway/","path":"2022/12/17/tech-Arch-Sway/","title":"使用Arch Linux + Sway一年后"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>使用Arch Linux + Sway一年后 | ch3n9w||超元域</title>
+  
+
+
+
+
+
+
+  <script async defer data-website-id="" src=""></script>
+
+  <script defer data-domain="" src=""></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="ch3n9w||超元域" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">ch3n9w||超元域</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">(´・ω・｀)你瞅啥呢</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B5%B7%E5%9B%A0"><span class="nav-number">1.</span> <span class="nav-text">起因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%93%E9%AA%8C"><span class="nav-number">2.</span> <span class="nav-text">体验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Trouble-Shooting"><span class="nav-number">3.</span> <span class="nav-text">Trouble Shooting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E6%9C%BA%E7%9A%84%E6%97%B6%E5%80%99%E5%87%BA%E7%8E%B0-a-stoping-job-is-running-for-xxx-hangout"><span class="nav-number">3.1.</span> <span class="nav-text">关机的时候出现 a stoping job is running for xxx hangout</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JAVA%E7%A8%8B%E5%BA%8F%E5%9C%A8wayland%E4%B8%8B%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8"><span class="nav-number">3.2.</span> <span class="nav-text">JAVA程序在wayland下无法启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AVD-%E5%9C%A8wayland%E4%B8%8B%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8"><span class="nav-number">3.3.</span> <span class="nav-text">AVD 在wayland下无法启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#wayland%E4%B8%8B%E7%8E%A9%E6%B8%B8%E6%88%8F"><span class="nav-number">3.4.</span> <span class="nav-text">wayland下玩游戏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#waybar-%E5%9C%A8sway%E5%90%AF%E5%8A%A8%E5%90%8E%E5%BE%88%E4%B9%85%E6%89%8D%E5%87%BA%E7%8E%B0"><span class="nav-number">3.5.</span> <span class="nav-text">waybar 在sway启动后很久才出现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sway-%E9%A1%B6%E9%83%A8%E6%A0%8F%E5%87%BA%E7%8E%B0%E4%B8%AD%E6%96%87%E5%90%8E%E9%AB%98%E5%BA%A6%E5%8F%98%E5%8C%96"><span class="nav-number">3.6.</span> <span class="nav-text">sway 顶部栏出现中文后高度变化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#wayland%E4%B8%8B%E7%9A%84%E8%85%BE%E8%AE%AF%E4%BC%9A%E8%AE%AE"><span class="nav-number">3.7.</span> <span class="nav-text">wayland下的腾讯会议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GTK%E9%97%AE%E9%A2%98"><span class="nav-number">3.8.</span> <span class="nav-text">GTK问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#error-GPGME-error-No-data"><span class="nav-number">3.9.</span> <span class="nav-text">error: GPGME error: No data</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="ch3n9w"
+      src="/images/sabito.jpg">
+  <p class="site-author-name" itemprop="name">ch3n9w</p>
+  <div class="site-description" itemprop="description">向阳十八载，回首也无晴</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ch3n9w" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ch3n9w" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://l0x1c.github.io/" title="https:&#x2F;&#x2F;l0x1c.github.io&#x2F;" rel="noopener" target="_blank">l0x1c</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://forever404.cn/" title="https:&#x2F;&#x2F;forever404.cn" rel="noopener" target="_blank">Forever</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://yml-sec.top/" title="https:&#x2F;&#x2F;yml-sec.top&#x2F;" rel="noopener" target="_blank">YeMoLi</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://althims.com/" title="https:&#x2F;&#x2F;althims.com" rel="noopener" target="_blank">Moyu</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="http://handsomedog.top/" title="http:&#x2F;&#x2F;handsomedog.top" rel="noopener" target="_blank">Handsomedog</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="http://fightingtree.github.io/" title="http:&#x2F;&#x2F;fightingtree.github.io" rel="noopener" target="_blank">FightingTree</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://sunian19.github.io/" title="https:&#x2F;&#x2F;sunian19.github.io&#x2F;" rel="noopener" target="_blank">SuNian</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://blog.cnxfs.com.cn/" title="https:&#x2F;&#x2F;blog.cnxfs.com.cn&#x2F;" rel="noopener" target="_blank">xiangfangsong</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://www.b3ale.cn/" title="https:&#x2F;&#x2F;www.b3ale.cn" rel="noopener" target="_blank">b3ale</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://ch3n9w.github.io/2022/12/17/tech-Arch-Sway/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/sabito.jpg">
+      <meta itemprop="name" content="ch3n9w">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ch3n9w||超元域">
+      <meta itemprop="description" content="向阳十八载，回首也无晴">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="使用Arch Linux + Sway一年后 | ch3n9w||超元域">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          使用Arch Linux + Sway一年后
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-12-17 14:24:23" itemprop="dateCreated datePublished" datetime="2022-12-17T14:24:23+08:00">2022-12-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-12-22 11:13:24" itemprop="dateModified" datetime="2022-12-22T11:13:24+08:00">2022-12-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><img src="/images/tech-Arch-Sway/image-20221217132544646.png" alt="image-20221217132544646"></p>
+<span id="more"></span>
+
+<p>不知不觉使用sway已经整整一年了，于是来谈一谈自己这一年的使用感受，顺便回顾了一下过去。</p>
+<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>2019年，在一次编程作业的时候，同专业的另一个老哥向我展示了vim的代码h补全，我立刻被这种简陋但是扩展性极强的代码编辑器吸引了，于是当时还是个刚转入计算机专业的小白就开始哼哧哼哧地学习vim的配置和插件的安装。当然，这些都发生在我的Kali Linux虚拟机中。</p>
+<p><img src="/images/tech-Arch-Sway/image-20221217104938577.png" alt="image-20221217104938577"></p>
+<p>那个时候我正接触CTF，很多时候都要开着虚拟机，于是有一天动起了把电脑系统直接装成linux的想法。因为自己的第一台笔记本是暗夜精灵2，游戏本装Linux，第一个要考虑的就是兼容性和稳定性，在权衡各个发行版的优势和流行程度后，我选择了ubuntu18.04。笔记本重装完毕后除了风扇转个不停竟然一切运行正常，这让我实在有些惊喜，而风扇问题是英伟达独显导致的，在ubuntu上，只需要一条<code>sudo ubuntu-drivers autoinstall</code>就完美解决了。当时的自己很开心，仿佛打开了一道新世界的大门。</p>
+<p>后来，我去吉林参加了第一次线下赛，ubuntu没有掉链子，帮我拿了一个一血，我很满意。直到一次上课，手贱执行了<code>apt upgrade</code>，升级完电脑竟然无法开机了，一整个无语，而当时临近期末，我已经没有时间再去折腾系统了，于是紧急安装了windows应付期末复习，顺便下单了一台对Linux更加友好的笔记本Thinkpad T480。</p>
+<p>期末考试结束后，我听说了Arch Linux 的大名，但是出于畏难情绪，我选择将ubuntu18.04安装在我的thinkpad t480上，然后去参加xman的夏令营。在夏令营期间，我的电脑在连接wifi一段时间后就再也连接不上了，第一次我选择了重装，但是第二次还是同样的问题，我只好绝望地回到windows10，事后分析的时候，我觉得应该是驱动的问题，thinkpad t480是2018年下半年发布的，ubuntu18.04的驱动可能确实没覆盖到它的网卡。</p>
+<p>之后的好几个月里，我都乖乖用着windows10和WSL2，实习的时候全程在虚拟机里面写代码。等到实习结束、保研也结束的时候，我又开始了新一轮的折腾。</p>
+<p>2020年下半年，我将自己的主力电脑全面迁移到了Manjaro Linux下，那个时候qv2ray还很活跃，我的科学上网也很依赖它，但是有好几次在更新的时候发生了Manjaro特有的问题：软件的版本更新上来了，但是软件的依赖没有更新上来，这种问题也影响了trilium等软件，虽然不能怪manjaro，但是我还是愤而转向了Arch Linux，一直到今天我也还在用。</p>
+<p>转到Arch Linux之后，我基本上不再改变自己的发行版了，只是会在图形界面折腾一些。2020年-2021年上半年我使用的都是KDE，好看是真好看，但是Bug也是真的致命，这其中我亲身经历过的至少三次重复出现在不同电脑（thinkpad T480出现过，thinkbook 14p 出现过）的bug就是盒盖睡眠失败，我不知道是谁引起的，是plasma还是conky还是别的什么组件，我不知道，我在日志里也查不到。别看这个问题好像没什么，但是作为一个笔记本用户，盒盖后放进包里是一个非常自然的行为，回到宿舍没有第一时间拿出电脑而是休息一会也是很正常的行为，但是休息完后发现自己的电脑在包里变成了一个铁板烧就不是一个正常的现象了。嘴硬的人当然会说thinkpad不是有指示灯吗？你看指示灯判断是否睡眠成功不就行了？且不说我后来的电脑thinkbook 14p是没有指示灯的，单就系统质量而言，一个系统每次使用的时候都需要用户小心翼翼盯着指示灯看，是否已经说明了这是一个糟糕的系统了？为什么换成thinkbook？就是因为这个bug把我的thinkpad的主板烧坏了！我曾以为这是thinkpad独有的问题，可是当thinkbook也发生同样问题的时候我对KDE彻底失望了，是的，这是一个很漂亮的桌面环境，定制性强又有很多特效，可是这一切都建立在一些不稳定的bug上的时候，这些特效会更多扮演起bug的导火索角色。</p>
+<p>经历过KDE的bug后，我对复杂的桌面环境产生了恐惧，他们就像是一枚不定时炸弹。在这个前提背景下，我接触并开始使用SwayWM，一直到今天，我也还在使用，而那个致命Bug，已经离我远去。</p>
+<h2 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h2><p>得益于Arch Linux庞大的用户群，Arch 的软件包生态在一众发行版中可以说是称王称霸了，我举一个例子，你能想象在Linux的软件仓库中会出现deepin-wine魔改后的腾讯系软件吗？</p>
+<p><img src="/images/tech-Arch-Sway/image-20221217115944914.png" alt="image-20221217115944914"></p>
+<p>每次看到其他发行版用户手动下载deb然后安装的时候，我都会产生一种他们是不是在用windows的错觉，并不是看不起别的发行版，只是各有分工和侧重点，比如Arch的定位是桌面端用户，而很多别的发行版的定位是服务器，我不会用别的发行版当作我的桌面系统，就像我不会把Arch装在服务器上一样。用统一的包管理器管理软件包肯定是有好处的，能够大大减轻用户的心智负担。</p>
+<p>至于网络上提到的Arch Linux不稳定、容易滚挂的问题，不好意思，我用了两年Arch了，每天都执行<code>yay -Syyu</code>，从来没有出现滚挂的问题，相反，我目前所遇到的半数Linux相关问题，都是因为系统软件或者依赖库过于老旧而导致的，更新后就可以解决。Linux不是Windows，如果你不想要更新，那么有两种选择，第一种，锁定自己的软件版本，然后在每次安装新软件的时候单独解决依赖问题；第二种，回去用windows。</p>
+<p>说完了Arch Linux，再来说说Sway，这是一个简单的wayland窗口管理器，为什么用wayland，因为我不希望自己的图形界面建立在一个老旧而难以维护的基础设施之上，那给我的感觉就好像我在使用另一个plasma。诚然，wayland还有很长的一段路要走，很多桌面软件都不得不借助xwayland才能在其上运行，经过实际使用，除了在4k屏幕上xwayland有问题之外，其他情况下还是可以完美工作的。当然，部分软件是有问题的，比如腾讯会议的桌面共享功能，但是也已经有了曲线救国的办法，所以现在wayland的生态已经比之前要好一些了，当我看到linux qq内测群里有人提出wayland下的问题以及要求兼容wayland的时候，我就相信未来还会更好。</p>
+<p>Sway是一个窗口管理器，开发者做的事情是在wayland下复刻一个i3wm出来。窗口管理器的好处是我现在更多依赖键盘而不是鼠标了，可以减少对视觉聚焦于鼠标这种行为的依赖，转而更多依赖自己的触觉，另外，更少的特效和更简洁的设计不仅让我的系统大大增强了稳定性（据一位用KDE的同学说，直到今天，用KDE只要一周不关机就必定会崩溃），还让我自己更加专注于手头的工作（平铺式窗口管理器的统一好处）。不好的地方当然也有不少，比如初次接触的时候要花很多时间去配置和适应，比如每次修改操作键位的时候都需要一定时间去重新适应，比如fcitx5在某些软件下面无法工作或者是有缺陷（这不是fcitx5的锅），比如它让我认识到自己是一个很笨蛋的人，使用了一年了，让我时不时就发现自己的操作习惯可以有优化空间，比如：</p>
+<ul>
+<li>在按win+数字键的时候，用大拇指去按是很扭曲的姿势，<strong>一个更加自然的姿势是用左手的掌心左下（手背视角）的部分去压win键，然后用手指去按数字键。</strong>如果要按ctrl+win，就用同样的部位压住两个键，这个难度会大一些，大概确实还可以优化的。</li>
+<li>调整窗口大小的时候，进入resize模式然后用键盘去按是很低效的行为，相反，这种时候依赖鼠标不是什么坏事，通过把鼠标悬停在窗口上然后按住右键进行拖拽就可以实现快速的窗口大小调整。</li>
+<li>scratchpad中更适合使用tab模式。</li>
+<li>有的时候在两个workspace之间切换会很频繁，这个时候更适合用<code>workspace back_and_forth</code>而不是一直执着于用数字键去切换，或者使用鼠标的滚轮来切换，这也是一个不错的主意。</li>
+</ul>
+<p>除此之外还有一个小的优点，在sway下可以给不同键盘换上不同的布局，这点对我而言是刚需，但是在xorg下面，这种操作往往只能将同一个布局应用于所有的键盘，一旦布局出现了问题导致键盘不可用，那么所有的键盘都会变得不可用。</p>
+<p>最后，我和大部分的geek用户不一样，我比较笨，只是一个普通用户，我做不到也不想去和他们一样视鼠标如洪水猛兽，相反，sway下我还是会频繁使用鼠标，对我来说用鼠标去交互两个窗口的位置依旧是比用键盘更加高效的操作。<strong>所以我想说的是，追求属于自己的实用性，你可以去参考别人的建议，但是最终还是要找到属于你自己的习惯。</strong> 对于我个人来说， 我也完全不排除在plasma的bug修复后回到plasma的可能性，毕竟老牌桌面。</p>
+<p>列出我使用的软件：</p>
+<ul>
+<li>桌面环境<ul>
+<li>SwayWM（窗口管理）</li>
+<li>waybar（信息展示栏）</li>
+</ul>
+</li>
+<li>终端<ul>
+<li>alacritty</li>
+</ul>
+</li>
+<li>浏览器<ul>
+<li>firefox-developer-edition （主力）</li>
+<li>chrome</li>
+</ul>
+</li>
+<li>输入法<ul>
+<li>fcitx5</li>
+</ul>
+</li>
+<li>代码编辑<ul>
+<li>Neovim（主力）</li>
+<li>Vscode（副手）</li>
+<li>Jetbrains</li>
+</ul>
+</li>
+<li>做笔记<ul>
+<li>Neovim-qt</li>
+<li>zotero</li>
+</ul>
+</li>
+<li>文件浏览器<ul>
+<li>ranger</li>
+<li>dolphin</li>
+</ul>
+</li>
+<li>看论文<ul>
+<li>zotero</li>
+<li>okular</li>
+</ul>
+</li>
+<li>游戏<ul>
+<li>steam（泰拉瑞亚、黑暗之魂……）</li>
+<li>waydroid（明日方舟）</li>
+<li>HMCL（minecraft）</li>
+</ul>
+</li>
+<li>工具替代<ul>
+<li>exa 替代 ls</li>
+<li>zoxide 替代 cd</li>
+<li>scp 替代 cp</li>
+</ul>
+</li>
+</ul>
+<h2 id="Trouble-Shooting"><a href="#Trouble-Shooting" class="headerlink" title="Trouble Shooting"></a>Trouble Shooting</h2><h3 id="关机的时候出现-a-stoping-job-is-running-for-xxx-hangout"><a href="#关机的时候出现-a-stoping-job-is-running-for-xxx-hangout" class="headerlink" title="关机的时候出现 a stoping job is running for xxx hangout"></a>关机的时候出现 a stoping job is running for xxx hangout</h3><p>修改<code>/etc/systemd/system.conf</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DefaultTimeoutStopSec=5s</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="JAVA程序在wayland下无法启动"><a href="#JAVA程序在wayland下无法启动" class="headerlink" title="JAVA程序在wayland下无法启动"></a>JAVA程序在wayland下无法启动</h3><p>添加环境变量</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_JAVA_AWT_WM_NONREPARENTING=1</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="AVD-在wayland下无法启动"><a href="#AVD-在wayland下无法启动" class="headerlink" title="AVD 在wayland下无法启动"></a>AVD 在wayland下无法启动</h3><p>用下面的语句启动android-studio再去启动avd</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">QT_QPA_PLATFORM=xcb _JAVA_AWT_WM_NONREPARENTING=1 android-studio</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="wayland下玩游戏"><a href="#wayland下玩游戏" class="headerlink" title="wayland下玩游戏"></a>wayland下玩游戏</h3><p>添加环境变量</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SDL_VIDEODRIVER=x11</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="waybar-在sway启动后很久才出现"><a href="#waybar-在sway启动后很久才出现" class="headerlink" title="waybar 在sway启动后很久才出现"></a>waybar 在sway启动后很久才出现</h3><p>sway配置中添加</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">exec hash dbus-update-activation-environment 2&gt;/dev/null &amp;&amp; \</span><br><span class="line">	dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="sway-顶部栏出现中文后高度变化"><a href="#sway-顶部栏出现中文后高度变化" class="headerlink" title="sway 顶部栏出现中文后高度变化"></a>sway 顶部栏出现中文后高度变化</h3><p>在sway配置文件中添加以下设置来统一使用一个高高的字符的高度.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for_window [title=&quot;.*&quot;] title_format ゜%title゜</span><br></pre></td></tr></table></figure>
+
+<h3 id="wayland下的腾讯会议"><a href="#wayland下的腾讯会议" class="headerlink" title="wayland下的腾讯会议"></a>wayland下的腾讯会议</h3><p>首先新建虚拟摄像头</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo modprobe v4l2loopback devices=1 video_nr=10 card_label=<span class="string">&#x27;OBS Cam&#x27;</span> exclusive_caps=1</span><br><span class="line">sudo modprobe snd-aloop index=10 <span class="built_in">id</span>=<span class="string">&#x27;OBS Mic&#x27;</span></span><br><span class="line">pacmd <span class="string">&#x27;update-source-proplist alsa_input.platform-snd_aloop.0.analog-stereo device.description=&quot;OBS Mic&quot;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>然后打开obs，点击要共享的屏幕，点击start virtual camera。这个时候再进入腾讯会议，选择视频（不是屏幕共享），然后把视频的输入源切换到这个虚拟摄像头就可以达到屏幕共享的效果了。</p>
+<h3 id="GTK问题"><a href="#GTK问题" class="headerlink" title="GTK问题"></a>GTK问题</h3><p>不要在环境变量中设置<code>GDK_BACKEND=wayland</code>, GTK程序会自动优先选择wayland,如果不行会自动切换到xwayland</p>
+<h3 id="error-GPGME-error-No-data"><a href="#error-GPGME-error-No-data" class="headerlink" title="error: GPGME error: No data"></a>error: GPGME error: No data</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -f /var/lib/pacman/sync/*</span><br><span class="line">sudo pacman -Sc</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Written by:  </strong>ch3n9w
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://ch3n9w.github.io/2022/12/17/tech-Arch-Sway/" title="使用Arch Linux + Sway一年后">https://ch3n9w.github.io/2022/12/17/tech-Arch-Sway/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/12/15/tech-thinking-about-vim/" rel="prev" title="vim/neovim 的问题">
+                  <i class="fa fa-chevron-left"></i> vim/neovim 的问题
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/12/20/gossip-yang-diary-md/" rel="next" title="小阳人日记">
+                  小阳人日记 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ch3n9w</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

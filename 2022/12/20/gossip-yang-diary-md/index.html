@@ -20,29 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"ch3n9w.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.14.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="记录切换到wayland时候的必要操作和个人体验">
+    <meta name="description" content="生命本就如此脆弱">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wayland_mode">
-<meta property="og:url" content="https://ch3n9w.github.io/2021/10/22/tech-wayland-mode/index.html">
+<meta property="og:title" content="小阳人日记">
+<meta property="og:url" content="https://ch3n9w.github.io/2022/12/20/gossip-yang-diary-md/index.html">
 <meta property="og:site_name" content="ch3n9w||超元域">
-<meta property="og:description" content="记录切换到wayland时候的必要操作和个人体验">
+<meta property="og:description" content="生命本就如此脆弱">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://ch3n9w.github.io/images/wayland-mode/image-20211022171916931.png">
-<meta property="article:published_time" content="2021-10-22T09:04:51.000Z">
-<meta property="article:modified_time" content="2022-12-12T09:14:26.308Z">
+<meta property="article:published_time" content="2022-12-20T14:45:44.000Z">
+<meta property="article:modified_time" content="2022-12-22T03:14:30.591Z">
 <meta property="article:author" content="ch3n9w">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ch3n9w.github.io/images/wayland-mode/image-20211022171916931.png">
 
 
-<link rel="canonical" href="https://ch3n9w.github.io/2021/10/22/tech-wayland-mode/">
+<link rel="canonical" href="https://ch3n9w.github.io/2022/12/20/gossip-yang-diary-md/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://ch3n9w.github.io/2021/10/22/tech-wayland-mode/","path":"2021/10/22/tech-wayland-mode/","title":"wayland_mode"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://ch3n9w.github.io/2022/12/20/gossip-yang-diary-md/","path":"2022/12/20/gossip-yang-diary-md/","title":"小阳人日记"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>wayland_mode | ch3n9w||超元域</title>
+<title>小阳人日记 | ch3n9w||超元域</title>
   
 
 
@@ -118,7 +116,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%93%E9%AA%8C"><span class="nav-number">1.</span> <span class="nav-text">体验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E6%8D%A2"><span class="nav-number">2.</span> <span class="nav-text">切换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98"><span class="nav-number">3.</span> <span class="nav-text">问题</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#12-16"><span class="nav-number">1.</span> <span class="nav-text">12.16</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-17"><span class="nav-number">2.</span> <span class="nav-text">12.17</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-18"><span class="nav-number">3.</span> <span class="nav-text">12.18</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-19"><span class="nav-number">4.</span> <span class="nav-text">12.19</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-20"><span class="nav-number">5.</span> <span class="nav-text">12.20</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-21"><span class="nav-number">6.</span> <span class="nav-text">12.21</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -133,7 +131,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">38</span>
+          <span class="site-state-item-count">39</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -210,7 +208,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://ch3n9w.github.io/2021/10/22/tech-wayland-mode/">
+    <link itemprop="mainEntityOfPage" href="https://ch3n9w.github.io/2022/12/20/gossip-yang-diary-md/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/sabito.jpg">
@@ -223,12 +221,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="wayland_mode | ch3n9w||超元域">
+      <meta itemprop="name" content="小阳人日记 | ch3n9w||超元域">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          wayland_mode
+          小阳人日记
         </h1>
 
         <div class="post-meta-container">
@@ -239,14 +237,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-10-22 17:04:51" itemprop="dateCreated datePublished" datetime="2021-10-22T17:04:51+08:00">2021-10-22</time>
+      <time title="Created: 2022-12-20 22:45:44" itemprop="dateCreated datePublished" datetime="2022-12-20T22:45:44+08:00">2022-12-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-12-12 17:14:26" itemprop="dateModified" datetime="2022-12-12T17:14:26+08:00">2022-12-12</time>
+      <time title="Modified: 2022-12-22 11:14:30" itemprop="dateModified" datetime="2022-12-22T11:14:30+08:00">2022-12-22</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -254,7 +252,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+          <a href="/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" itemprop="url" rel="index"><span itemprop="name">碎碎念</span></a>
         </span>
     </span>
 
@@ -268,38 +266,20 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>记录切换到wayland时候的必要操作和个人体验</p>
-<p><img src="/images/wayland-mode/image-20211022171916931.png" alt="image-20211022171916931"></p>
+        <p>生命本就如此脆弱</p>
 <span id="more"></span>
 
-<h2 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h2><p>系统环境如上图所示</p>
-<p>可以明显感受到在wayland下面窗口的动画效果流畅了很多。</p>
-<h2 id="切换"><a href="#切换" class="headerlink" title="切换"></a>切换</h2><p>不少程序已经原生支持wayland的了，要让他们完成切换，需要在<code>/etc/environment</code>中写入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">QT_QPA_PLATFORM=wayland</span><br><span class="line">SDL_VIDEODRIVER=wayland</span><br><span class="line"># GDK_BACKEND=wayland</span><br><span class="line">CLUTTER_BACKEND=wayland</span><br><span class="line">MOZ_ENABLE_WAYLAND=1</span><br></pre></td></tr></table></figure>
-
-<p>这些选项分别让 QT GTK 等类别的程序使用wayland模式启动，如果不添加的话，默认就是在xwayland模式下启动(除了GTK)。最后一行是让firefox在wayland模式下启动。<code>GDK_BACKEND=wayland</code> 不建议启动，可以在wayland下启动的gtk程序默认会优先使用wayland,但是不能在wayland下启动的，也应该允许它们使用xwayland。</p>
-<p>对于electron类的应用，要在配置文件下面新建<code>electron-flags.conf</code>，在里面写入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">--enable-features=UseOzonePlatform</span><br><span class="line">--ozone-platform=wayland</span><br></pre></td></tr></table></figure>
-
-<p>这样所有electron程序都会在wayland模式下启动了，当然，也可以在单独某个electron程序启动的时候附上这两个flag来单独让它在wayland下面启动。</p>
-<p>virtualbox 在wayland下面需要执行以下操作，否则开启虚拟机之后不会捕获键盘输入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gsettings get org.gnome.mutter.wayland xwayland-grab-access-rules</span><br><span class="line">gsettings set org.gnome.mutter.wayland xwayland-grab-access-rules &quot;[&#x27;VirtualBox Machine&#x27;]&quot;</span><br></pre></td></tr></table></figure>
-
-<p>如果提示<code>No such schema “org.gnome.mutter.wayland”</code>，就安装一下mutter</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yay -S mutter</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul>
-<li>fcitx5 在 wayland模式下的electron 中无法输入中文</li>
-<li>wayland下的firefox在网页输入个人账户信息的时候不会弹出候选账户和密码</li>
-<li>Log out之后黑屏，需要强制关机</li>
-<li>jetbrain burpsuite 这类java程序依旧需要xwayland 不过目前没有问题</li>
-<li>spectacle 截图不太正常</li>
-<li>偶尔剪切板会工作异常，比如firefox中复制的内容无法张贴到其他应用中，但是可以张贴在firefox内</li>
-<li>kwin设置的规则中，无法让程序记住自己退出时候的位置</li>
-</ul>
-<p>总之，很多的关键应用仍旧存在不影响使用的小问题，鉴于wayland是linux桌面环境的未来，我选择加入。</p>
+<h2 id="12-16"><a href="#12-16" class="headerlink" title="12.16"></a>12.16</h2><p>宿舍楼里的人很多已经阳了, 斜对门的宿舍也阳了. 学校赶人且机票价格低,于是选在了16号出发.</p>
+<p>16号当天来到机场的时候完全没有检查健康宝的步骤, 甚至没有量体温的步骤, 一瞬间的感觉是很不习惯, 然后就是觉得危险. 但是早餐不能不吃, 于是在登机口吃了kfc, 这是可能感染的第一个点.</p>
+<p>坐飞机, 下飞机, 上大巴, 然后到车站. 这期间能被感染的点太多了, 人口聚集太密集了.</p>
+<p>回到家后, 凌晨一点不到感觉身体着凉,喉咙隐隐有点不舒服.</p>
+<h2 id="12-17"><a href="#12-17" class="headerlink" title="12.17"></a>12.17</h2><p>喉咙发炎,没量体温,仍存有侥幸心理. </p>
+<h2 id="12-18"><a href="#12-18" class="headerlink" title="12.18"></a>12.18</h2><p>喉咙发炎+头晕,体温正常,家里人因此觉得只是感冒,我说可能是新冠,但是你们肯定防不住了.</p>
+<h2 id="12-19"><a href="#12-19" class="headerlink" title="12.19"></a>12.19</h2><p>喉咙发炎加重为刀片嗓, 头不晕了,体温正常.</p>
+<h2 id="12-20"><a href="#12-20" class="headerlink" title="12.20"></a>12.20</h2><p>刀片嗓,背部肌肉有些酸痛无力,开始咳嗽鼻塞流鼻涕.体温正常. </p>
+<p>pdd上的药都要下个月才能送出来, 家里的药也很有限.</p>
+<p>晚上妈妈发烧了, 用抗原试纸一测很快就出来了两道杠, 估计是被我传染的, 我后悔这个时候回来, 哪怕出去旅游一圈养出抗体再回来也好.</p>
+<h2 id="12-21"><a href="#12-21" class="headerlink" title="12.21"></a>12.21</h2><p>继续刀片嗓子，流鼻涕咳嗽鼻塞，肌肉不疼了，体温正常。</p>
 
     </div>
 
@@ -317,7 +297,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="https://ch3n9w.github.io/2021/10/22/tech-wayland-mode/" title="wayland_mode">https://ch3n9w.github.io/2021/10/22/tech-wayland-mode/</a>
+      <a href="https://ch3n9w.github.io/2022/12/20/gossip-yang-diary-md/" title="小阳人日记">https://ch3n9w.github.io/2022/12/20/gossip-yang-diary-md/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -330,14 +310,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/10/15/sec-jdbc-unserialize/" rel="prev" title="mysql jdbc反序列化的不深入研究">
-                  <i class="fa fa-chevron-left"></i> mysql jdbc反序列化的不深入研究
+                <a href="/2022/12/17/tech-Arch-Sway/" rel="prev" title="使用Arch Linux + Sway一年后">
+                  <i class="fa fa-chevron-left"></i> 使用Arch Linux + Sway一年后
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/11/13/sec-GhostCat/" rel="next" title="GhostCat(CVE-2020-1938)漏洞学习">
-                  GhostCat(CVE-2020-1938)漏洞学习 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
