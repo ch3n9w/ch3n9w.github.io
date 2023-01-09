@@ -6,7 +6,7 @@
   <link href="https://ch3n9w.github.io/atom.xml" rel="self"/>
   
   <link href="https://ch3n9w.github.io/"/>
-  <updated>2022-12-31T17:20:11.598Z</updated>
+  <updated>2023-01-09T16:33:01.253Z</updated>
   <id>https://ch3n9w.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>武装火狐</title>
+    <link href="https://ch3n9w.github.io/2023/01/09/tech-arm-firefox/"/>
+    <id>https://ch3n9w.github.io/2023/01/09/tech-arm-firefox/</id>
+    <published>2023-01-09T15:04:29.000Z</published>
+    <updated>2023-01-09T16:33:01.253Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/tech-arm-firefox/image-20230109230723998.png&quot; alt=&quot;image-20230109230723998&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://ch3n9w.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>论俄乌战争</title>
@@ -355,23 +372,6 @@
     
     
     <summary type="html">&lt;h2 id=&quot;simpleflask&quot;&gt;&lt;a href=&quot;#simpleflask&quot; class=&quot;headerlink&quot; title=&quot;simpleflask&quot;&gt;&lt;/a&gt;simpleflask&lt;/h2&gt;&lt;p&gt;和以往的flask不一样的地方在于, 这里是经过更新后的flask, 计算pin码的方式已经和以前不一样了, 参考 &lt;a href=&quot;https://www.chainnews.com/articles/898433701852.htm&quot;&gt;https://www.chainnews.com/articles/898433701852.htm&lt;/a&gt;, 不过问题不大,就把machine-id拼接在docker那一串东西的前面就可以了, 需要注意的是每十分钟重启时候的机器mac地址是会变化的.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="做题" scheme="https://ch3n9w.github.io/categories/%E5%81%9A%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>qwb2020web复现</title>
-    <link href="https://ch3n9w.github.io/2020/08/27/ctf-qwb2020-web-1/"/>
-    <id>https://ch3n9w.github.io/2020/08/27/ctf-qwb2020-web-1/</id>
-    <published>2020-08-27T12:48:12.000Z</published>
-    <updated>2022-12-12T09:17:38.092Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/qwb2020-web-1/image-20211114141959846.png&quot; alt=&quot;image-20211114141959846&quot;&gt;&lt;/p&gt;</summary>
     
     
     
